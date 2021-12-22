@@ -1,6 +1,6 @@
 # Loan qualifier
 
-The application helps to quickly and easily select loans suitable for the client. Based on provided information from the client and client's expectations about the loan, the application provides list of qualifying loans.
+The application helps to quickly and easily select loans suitable for the client. Based on provided information from the client and client's expectations about the loan, the application provides list of qualifying loans. The user can save results to file.
 
 ---
 
@@ -16,6 +16,8 @@ This project leverages python 3.7 with the following packages:
 
 ## Installation Guide
 
+> The application requeries instaled Python! Please get it from [here](https://www.python.org)
+
 Before running the application first install the following dependencies.
 
 ```python
@@ -25,7 +27,11 @@ Before running the application first install the following dependencies.
 ---
 
 ## Usage
+To use the loan qualifier application please clone the repository and run the **app.py** with:
 
+```python
+python app.py
+```
 
 
 ---
