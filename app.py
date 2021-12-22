@@ -111,17 +111,21 @@ def save_qualifying_loans(qualifying_loans):
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
 
+    # Set header of the content of the file
     header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
-
+    
+    # Set boolean variable for checking if user would like to save results filtering into file or not 
     save_or_not = questionary.confirm("Do you want to save qualifying bank loans into the file?", default=True).ask()
 
+    # Conditional statement - asking file name for saving results of filtering or close session if user would not like to save results.
     if save_or_not:
-        output_file_path = Path(questionary.text("Enter a file path for saving qualifying loans (.csv): ").ask())
+        output_file_path = Path(questionary.text("Enter a file name for saving qualifying loans (.csv): ").ask())
         
         while output_file_path == "":
-            print(f"Oops! You didn't provide file path!")
-            output_file_path = Path(questionary.text("Enter a file path for saving qualifying loans (.csv): ").ask())
+            print(f"Oops! You didn't provide file name!")
+            output_file_path = Path(questionary.text("Enter a file name for saving qualifying loans (.csv): ").ask())
 
+        # Call function for saving resuts of filtering
         save_csv(output_file_path, header, qualifying_loans)
     else:
         print("Thank for your cooperation! Buy!")
