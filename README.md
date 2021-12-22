@@ -16,7 +16,7 @@ This project leverages python 3.7 with the following packages:
 
 ## Installation Guide
 
-> The application requeries instaled Python! Please get it from [here](https://www.python.org)
+> The application requeries installed Python! Please get it from [here](https://www.python.org)
 
 Before running the application first install the following dependencies.
 
@@ -32,6 +32,23 @@ To use the loan qualifier application please clone the repository and run the **
 ```python
 python app.py
 ```
+Further, as requests of the program arise, provide the following information:
+* path to which contains loans
+* credit score
+* debt amount
+* income
+* loan amount
+* home value
+
+When processing of input date is done, the app will show you a number of qualifying loans.
+User can save result to file by providing file name.
+
+Here is an example of working application:
+
+![App's prompts](Images/example.png)
+
+
+
 
 
 ---
