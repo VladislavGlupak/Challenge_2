@@ -119,7 +119,7 @@ def save_qualifying_loans(qualifying_loans):
         output_file_path = Path(questionary.text("Enter a file path for saving qualifying loans (.csv): ").ask())
         
         while output_file_path == "":
-            print(f"Oops! You didn't provide file path:")
+            print(f"Oops! You didn't provide file path!")
             output_file_path = Path(questionary.text("Enter a file path for saving qualifying loans (.csv): ").ask())
 
         save_csv(output_file_path, header, qualifying_loans)

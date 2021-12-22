@@ -32,15 +32,15 @@ def load_csv(csvpath):
 
 def save_csv(output_path, header, qualifying_loans):
 
-    """Saves qualifying loans into CSV file from path provided.
+    """Saves qualifying loans into CSV file.
 
     Args:
-        output_path: The csv file path.
+        output_path: the csv file path.
         header: list of columns names
         qualifying_loans: list of qualifying loans
 
     Result:
-        Qualifing loans saved into new file.
+        Qualifing loans saved into new file. Abslute path is provided in the terminal output.
     """
 
     with open(output_path, "w") as output_file:
@@ -51,4 +51,4 @@ def save_csv(output_path, header, qualifying_loans):
         for loan in qualifying_loans:
             csvwriter.writerow(loan) # save qualifying loans values
     
-    print(f"Inexpensive loans were saved to {output_path.absolute()}")
+    print(f"Qualifying loans were saved to {output_path.absolute()}")
