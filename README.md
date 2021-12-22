@@ -45,7 +45,7 @@ User can save result to file by providing file name.
 
 Here is an example of working application:
 
-![App's prompts](Images/example.png)
+![App's prompts](images/example.PNG)
 
 
 
