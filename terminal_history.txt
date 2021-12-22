@@ -1,0 +1,46 @@
+    1  conda activate dev
+    2  python app.py 
+    3  python app.py 
+    4  python app.py 
+    5  python app.py 
+    6  python app.py 
+    7  python app.py 
+    8  python app.py 
+    9  ls
+   10  rm my new.csv f.csv 
+   11  ls
+   12  git status
+   13  ls -l
+   14  rm a test.csv 
+   15  git status
+   16  git add .
+   17  git commit -m "added function save_csv into fileio and added logic for saving results into file"
+   18  adb push origin main
+   19  git push origin main
+   20  python app.py 
+   21  git status
+   22  git add .
+   23  git commit -m "resolving typos"
+   24  git push origin main
+   25  git status
+   26  git add .
+   27  git commit -m "adding aditional comments"
+   28  git push origin main
+   29  git status
+   30  git add .
+   31  git commit -m "modifying the Readme file"
+   32  git push origin main
+   33  git status
+   34  git add .
+   35  git commit -m "updating Readme file"
+   36  git push origin main
+   37  python app.py 
+   38  git status
+   39  git add .
+   40  git commit -m "adding Images folder, updating Readme file"
+   41  git push origin main
+   42  git status
+   43  git add .
+   44  git commit -m "fixing images folder"
+   45  git push origin main
+   46  history 50 > terminal_history.txt
